@@ -1378,7 +1378,13 @@ impl Tensor {
         (0..size).filter_map(|i| {
             let mut data = Vec::new();
             for (idx, &val) in self.data.indexed_iter() {
-                let coords: Vec<usize> = self.data.raw_dim().as_array_view().iter().enumerate().map(|(d, &s)| idx % s).collect();
+                let shape = self.shape();
+                let mut coords = vec![0usize; shape.len()];
+                let mut rem: usize = idx.slice()[0];
+                for d in (0..shape.len()).rev() {
+                    coords[d] = rem % shape[d];
+                    rem /= shape[d];
+                }
                 if coords[dim] == i {
                     data.push(val);
                 }

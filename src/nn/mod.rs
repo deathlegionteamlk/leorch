@@ -1,8 +1,20 @@
 pub mod layers;
 pub mod activations;
+pub mod rnn;
+pub mod embedding;
+pub mod transformer;
+pub mod pooling;
+pub mod norm;
+pub mod init;
 
 pub use layers::*;
 pub use activations::*;
+pub use rnn::*;
+pub use embedding::*;
+pub use transformer::*;
+pub use pooling::*;
+pub use norm::*;
+pub use init::*;
 
 use crate::tensor::{Tensor, TensorDtype};
 use crate::autograd::Variable;
