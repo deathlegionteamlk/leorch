@@ -1,0 +1,54 @@
+# Rust build artifacts
+/target
+/Cargo.lock
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+
+# Plans directory
+/plans/
+
+# Cargo
+.cargo/
+
+# Build artifacts
+*.o
+*.a
+*.so
+*.dll
+*.dylib
+*.rlib
+*.rmeta
+*.d
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+
+# Backup files
+*.backup
+*.bak
+
+# Test artifacts
+/test-results/
+/coverage/
+
+# Documentation build
+doc/
+/docs/
+
+# Profiling
+*.prof
+*.profraw
