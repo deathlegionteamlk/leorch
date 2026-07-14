@@ -800,3 +800,6 @@ MIT — see [LICENSE](LICENSE).
 <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="60"/>
 
 </div>
+
+<!-- Badge earned via contribution -->
+![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
